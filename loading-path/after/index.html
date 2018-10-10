@@ -1,0 +1,24 @@
+<head>
+  <title>2018 NHN Forward - Fedev</title>
+<link href="bundle.css" rel="stylesheet"></head>
+  <body>
+    <h3 id="header"></h3>
+    <div id="container">
+    </div>
+    <h3 id="footer"></h3>
+    <script>
+      var LOADING_PERFORMANCE_CRITICAL_RENDERING_PATH = true;
+
+      if (LOADING_PERFORMANCE_CRITICAL_RENDERING_PATH) {
+        (function loadMainPage() {
+          const header = document.getElementById('header');
+          const footer = document.getElementById('footer');
+          const container = document.getElementById('container');
+    
+          header.innerHTML = 'NHN Forward 2018';
+          footer.innerHTML = 'FE Development Labs';
+          container.className = 'container-el';
+        })();
+      }
+    </script>  
+<script type="text/javascript" src="bundle.js"></script></body>
